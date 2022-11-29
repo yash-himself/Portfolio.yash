@@ -1,0 +1,401 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: yellow;
+    color: black;
+}
+
+
+body {
+    background-color: black;
+    color: aliceblue;
+
+
+}
+
+button {
+    display: none;
+    width: 40px;
+    height: 20px;
+    float: right;
+    background-color: rgb(44, 44, 52);
+    border: none;
+}
+
+#about {
+    display: flex;
+}
+
+#sidebar {
+
+    width: 20vw;
+    height: 100vh;
+    background-color: rgb(14, 14, 14);
+    font-size: 25px;
+    overflow-x: hidden;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+
+
+
+}
+
+.imgcontainer hr {
+    animation: tgl 2s linear .5s infinite;
+    color: yellow;
+    height: 3px;
+
+
+}
+
+@keyframes tgl {
+    1% {
+
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.mypic {
+    margin-top: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid yellow;
+    margin-left: 80px;
+
+}
+
+.textcontainer {
+    height: 100px;
+    width: 20vw;
+    padding: 5px 0px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textcontainer h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.textcontainer p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px;
+    color: yellow;
+
+}
+
+.navlinks a {
+    color: white;
+    font-size: 17px;
+
+
+
+
+}
+
+.navlinks li {
+    text-align: center;
+    width: 15vw;
+    height: 50px;
+    margin: 10px 0px 0px 35px;
+    background-color: rgb(44, 44, 52);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+.navlinks li:hover a {
+    font-weight: 500;
+
+    color: black;
+}
+
+.navlinks li:hover {
+    background-color: yellow;
+    transition: 900ms;
+}
+
+
+.mainsection {
+    height: 100vh;
+    width: 80vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20vw;
+
+
+}
+
+.mainbox {
+    width: 50vw;
+    height: 45vh;
+
+
+
+}
+
+.p1 {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.myname {
+    color: yellow;
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 72;
+}
+
+.p2 {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20PX;
+
+}
+
+.skills div {
+    margin: 0px 100px;
+    color: white;
+}
+
+.skills h3 {
+    line-height: 35px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: yellow;
+}
+
+/* ==================mainsection 2 */
+
+
+#education {
+    float: right;
+    width: 79vw;
+    height: 100vh;
+
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+
+}
+
+.eduitem {
+    width: 230px;
+    height: 200px;
+    background-color: rgb(44, 44, 52);
+    margin: 30px;
+    padding: 15px 25px 15px 45px;
+    border-radius: 20px;
+
+
+
+}
+
+.eduitem :nth-child(1) {
+    color: yellow;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.edubox {
+    display: flex;
+    flex-direction: column;
+}
+
+.eduboxchild {
+    display: flex;
+
+}
+
+
+/* ================= mainbix 3  */
+
+#portfolio {
+    height: 150vh;
+    width: 79vw;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.samplecontainer {
+    width: 75vw;
+    height: 120vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sampleitem {
+    width: 25vw;
+    height: 60vh;
+    background-color: black;
+    margin: 10px;
+}
+
+img {
+    width: 25vw;
+    height: 60vh;
+    border: none;
+    border-radius: 10px;
+}
+
+#contact {
+    height: 100vh;
+    width: 79vw;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.forms {
+    width: 35vw;
+    height: 80vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: yellow;
+    font-size: 20px;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback #user,
+#mail {
+    width: 25vw;
+    height: 30px;
+    padding: 5px;
+    margin: 15px;
+
+
+}
+
+#desc {
+    width: 25vw;
+    height: 60px;
+    padding: 5px;
+    margin: 15px;
+}
+
+#send {
+    width: 26vw;
+    height: 30px;
+    padding: 5px;
+    margin: 15px;
+}
+
+#send:hover {
+    color: black;
+    background-color: yellow;
+    transition: 900ms;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.address {
+    width: 35vw;
+    height: 60vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: left;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    margin-bottom: 90px;
+
+}
+
+i {
+    color: yellow;
+    margin: 10px;
+}
+
+.address p {
+    color: yellow;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+a {
+    color: white;
+
+}
+
+.text {
+    margin: 20px 50px;
+    text-align: left;
+}
+
+.icn {
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.link,
+.git {
+    text-decoration: underline;
+}

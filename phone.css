@@ -1,0 +1,419 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+::selection {
+    background-color: yellow;
+    color: black;
+}
+
+button {
+    display: block;
+    border: 1px solid rgb(93, 59, 59);
+    width: 40px;
+    height: 20px;
+    float: right;
+    margin: 0px;
+    background-color: rgb(44, 44, 52);
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 20;
+    font-size: 15px;
+    color: white;
+
+}
+.btn{
+    width: 100vw;
+    height: 20px;
+    background-color: rgb(14, 14, 14);
+    z-index: 20;
+    
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+
+
+}
+
+
+
+#about {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 0px;
+}
+
+#sidebar {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 14, 14);
+    font-size: 15px;
+    overflow-x: hidden;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+
+
+
+
+}
+
+.imgcontainer {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+.imgcontainer hr {
+    display: none;
+}
+
+
+.mypic {
+    margin-top: 15px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid yellow;
+
+}
+
+.textcontainer {
+    height: 90px;
+    width: 90vw;
+
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textcontainer h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.textcontainer h5{
+    margin-top: 5px;
+}
+.textcontainer p {
+    font-size: 10px;
+    font-weight: 500;
+    margin: 2px;
+    color: yellow;
+
+}
+
+.navlinks a {
+    color: white;
+    font-size: 17px;
+    padding: 2px 90px 5px 90px;
+
+
+}
+
+
+.navlinks li {
+    text-align: center;
+    width: 60vw;
+    height: 50px;
+    margin: 20px 0px 0px 15vw;
+    background-color: rgb(44, 44, 52);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+
+
+
+
+
+}
+
+
+.navlinks li:hover a {
+    font-weight: 500;
+
+    color: black;
+}
+
+.navlinks li:hover {
+    background-color: yellow;
+    transition: 900ms;
+}
+
+
+.mainsection {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0vw;
+    z-index: 2;
+
+
+}
+
+.mainbox {
+
+    text-align: center;
+    width: 95vw;
+    height: 66vh;
+
+
+
+}
+
+.p1 {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.myname {
+    color: yellow;
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 72;
+}
+
+.p2 {
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 35px;
+}
+
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20PX;
+
+}
+
+.skills div {
+    margin: 0px 40px;
+    color: white;
+}
+
+.skills h3 {
+    line-height: 35px;
+}
+
+h2 {
+    color: yellow;
+}
+
+/* ==================mainsection 2 */
+
+
+#education {
+    float: none;
+    width: 100vw;
+    height: 205vh;
+
+    justify-content: center;
+    display: flex;
+    /* flex-direction: column; */
+    padding-top: 30px;
+
+}
+
+.eduitem {
+    width: 230px;
+    height: 200px;
+    background-color: rgb(44, 44, 52);
+    margin: 30px;
+    padding: 15px 25px 15px 45px;
+    border-radius: 20px;
+
+
+
+}
+
+.eduitem :nth-child(1) {
+    color: yellow;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.edubox {
+    display: flex;
+    flex-direction: column;
+}
+
+.eduboxchild {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* ================= mainbix 3  */
+
+#portfolio {
+    height: 245vh;
+    width: 100vw;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.samplecontainer {
+    width: 75vw;
+    height: 120vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sampleitem {
+    width: 80vw;
+    height: 35vh;
+    background-color: black;
+    margin: 10px;
+}
+
+img {
+    width: 80vw;
+    height: 30vh;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#contact {
+    height: 100vh;
+    width: 100vw;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.forms {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: yellow;
+    font-size: 20px;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback #user,
+#mail {
+    width: 80vw;
+    height: 30px;
+    padding: 5px;
+    margin: 15px;
+
+
+}
+
+#desc {
+    width: 80vw;
+    height: 60px;
+    padding: 5px;
+    margin: 15px;
+}
+
+#send {
+    width: 82vw;
+    height: 30px;
+    padding: 5px;
+    margin: 10px 0px 10px 20px;
+    color: white;
+    background-color: rgb(173, 173, 173);
+}
+
+#send:hover {
+    color: black;
+    background-color: yellow;
+    transition: 900ms;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.address {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: left;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    margin-bottom: 0px;
+
+}
+
+i {
+    color: yellow;
+    margin: 10px;
+}
+
+.address p {
+    color: yellow;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+a {
+    color: white;
+
+}
+
+.text {
+    margin: 20px 15px;
+    text-align: left;
+}
+
+.icn {
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.link,
+.git {
+    text-decoration: underline;
+}
